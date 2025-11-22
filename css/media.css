@@ -1,0 +1,266 @@
+@media (max-width: 1200px) {
+
+    container {
+        padding: 0 20px;
+    }
+
+    .products-title {
+        font-size: 34px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .product-item img {
+        height: 200px;
+    }
+
+    .order-section {
+        padding: 40px 0;
+    }
+
+    .use-images img {
+        max-width: 180px;
+    }
+    .order-card {
+        padding: 30px;
+        gap: 30px;
+    }
+    .video-specs__wrapper {
+        gap: 60px;
+    }
+    .price-order {
+        display: grid;
+    }
+    .hero {
+        background: url(../img/fon-1200.png) no-repeat center / cover;
+    }
+
+    .hero-left h1 {
+        font-size: 30px;
+    }
+    .use-item::before {
+        content: "";
+        position: absolute;
+        top: 6px;
+    }
+
+    .order-section__left {
+        width: 46%;
+    }
+
+    .order-left img.order-img {
+        max-width: 380px;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .products-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .product-item {
+        padding: 16px;
+    }
+
+    .order-card {
+        flex-direction: column;
+        padding: 24px;
+        text-align: center;
+    }
+
+    .order-section__title {
+        font-size: 26px;
+    }
+    .hero-left h1 {
+        font-size: 26px;
+    }
+    .hero-left p {
+        font-size: 18px;
+    }
+    .price-box {
+        margin: 110px 0 0px;
+    }
+
+    .hero {
+        padding: 84px 0 60px;
+    }
+    .btn {
+        width: 260px;
+    }
+    .desc-images img {
+        width: auto;
+
+    }
+    .desc-text p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .video-specs__wrapper {
+        display: grid;
+    }
+    .order-section__container {
+        display: grid;
+    }
+    .order-section__left {
+        width: 100%;
+    }
+    .order-section__img {
+        width: 100%;
+    }
+    .use-images {
+        display: grid;
+    }
+    .stock {
+
+        text-align: center;
+    }
+    .price-order {
+        display: flex;
+    }
+
+    .order-title-mob {
+        display: grid;
+        font-family: Montserrat, sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #1b3bad;
+        margin-bottom: 8px;
+    }
+
+    .text-mob-order {
+        display: grid;
+        font-family: Montserrat, sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #272727;
+        margin-bottom: 16px;
+    }
+
+    .line-order-mob {
+        display: grid;
+        border: 1px solid #1b3bad;
+        width: 336px;
+        margin: 0 auto 40px;
+    }
+
+
+}
+@media (max-width: 768px) {
+
+    .products-title {
+        font-size: 28px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .product-item img {
+        height: 200px;
+    }
+
+    .order-card {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .order-left img.order-img {
+        max-width: 260px;
+    }
+
+    .order-section__title {
+        font-size: 24px;
+    }
+
+    .line-use {
+        width: 440px;
+    }
+
+    .line-deliv {
+        width: 390px;
+    }
+
+}
+
+@media (max-width: 540px) {
+
+    .products-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .product-item {
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    .product-item img {
+        height: 180px;
+    }
+
+    .order-card {
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .order-left img.order-img {
+        max-width: 220px;
+    }
+
+    .order-section__title {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .order-input {
+        height: 44px;
+        font-size: 14px;
+    }
+
+    .order-btn {
+        height: 46px;
+        font-size: 15px;
+    }
+
+    .line-deliv {
+        width: 290px;
+    }
+    .line-use {
+        width: 290px;
+    }
+    .price-order {
+        display: grid;
+        justify-content: center;
+    }
+    .hero {
+        background: url(../img/fon-bg540.png.) no-repeat center / cover;
+        padding: 34px 12px 60px;
+    }
+    .hero-left h1 {
+        font-size: 20px;
+        margin: 0 0 20px;
+    }
+    .hero-left p {
+        font-size: 16px;
+        margin-bottom: 300px;
+    }
+
+}
