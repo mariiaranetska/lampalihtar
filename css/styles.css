@@ -109,6 +109,7 @@ body {
 }
 
 .hero-left h1 {
+    text-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 32px;
@@ -161,16 +162,21 @@ body {
 
 
 .old-price {
-    font-size: 22px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 87%;
     text-decoration: line-through;
-    color: #777;
+    color: #272727;
 }
 
 
 .new-price {
-    font-size: 28px;
-    color: #d91616;
-    font-weight: 700;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 87%;
+    color: #e13213;
 }
 
 .order-title-mob {
@@ -212,7 +218,7 @@ body {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: #1b3bad;
     border-radius: 16px;
-    width: 360px;
+    width: 330px;
     display: inline-block;
     padding: 8px 36px;
     text-decoration: none;
@@ -238,6 +244,9 @@ body {
 }
 
 .section-title {
+    width: 327px;
+    height: 32px;
+    background: #f7f4f0;
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 30px;
@@ -293,39 +302,63 @@ body {
 }
 
 .section-title {
+    width: 220px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 140%;
     text-transform: uppercase;
     color: #272727;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     position: relative;
-    padding-bottom: 12px;
+    padding: 4px 10px 4px 20px;
 }
 
 .section-title::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -16px;
     height: 1px;
-    width: 100%;
+    width: 1146px;
     background: #1B3BAD;
 }
-
+.section-title-vid {
+    width: 494px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #272727;
+    margin-bottom: 60px;
+    position: relative;
+    padding: 4px 10px 4px 20px;
+    background: #f7f4f0;
+}
+.section-title-vid::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -16px;
+    height: 1px;
+    width: 1146px;
+    background: #1B3BAD;
+}
 .video-specs__wrapper {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 110px;
+    gap: 80px;
 }
 
 .video-box {
     position: relative;
     max-width: 50%;
 }
-
+.video-box video {
+    max-width: 100%;
+}
 .video-preview {
     width: 100%;
     border-radius: 6px;
@@ -338,7 +371,6 @@ body {
     width: 70px;
     height: 70px;
     transform: translate(-50%, -50%);
-    background: url("../img/play-btn.svg") no-repeat center/contain;
     border: none;
     cursor: pointer;
 }
@@ -358,15 +390,6 @@ body {
     margin-bottom: 12px;
 }
 
-.specs-list li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 6px;
-    width: 16px;
-    height: 16px;
-    background: url("../img/check-blue.svg") no-repeat center/contain;
-}
 
 .specs-list span {
     font-weight: 600;
@@ -377,19 +400,24 @@ body {
     margin-top: 56px;
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 16px;
 }
 
 .price .old {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 117%;
     text-decoration: line-through;
-    color: #777;
-    font-size: 20px;
+    color: #272727;
 }
 
 .price .new {
-    color: #E91C24;
-    font-size: 26px;
-    font-weight: 700;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 117%;
+    color: #e13213;
     margin-left: 10px;
 }
 
@@ -398,25 +426,33 @@ body {
     text-align: center;
 }
 
-/* ===== Верхня частина ===== */
 .reviews-title {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
     font-size: 20px;
-    font-weight: 700;
+    line-height: 180%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #272727;
     letter-spacing: 0.04em;
     margin-bottom: 6px;
 }
 
 .reviews-subtitle {
-    font-size: 14px;
-    opacity: 0.7;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 200%;
+    text-align: center;
+    color: #272727;
     margin-bottom: 18px;
 }
 
 .reviews-stars {
-    font-size: 20px;
-    color: #f9c423;
+    font-size: 22px;
+    color: #edba29;
     letter-spacing: 6px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     line-height: 1;
 }
 
@@ -443,20 +479,26 @@ body {
 }
 
 .review-author {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    color: #272727;
     display: block;
-    font-size: 14px;
-    font-weight: 600;
     margin-bottom: 10px;
 }
 
 .review-text {
-    font-size: 15px;
-    font-style: italic;       /* Курсив як на макеті */
-    line-height: 1.5;
-    opacity: 0.9;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    color: #272727;
+    font-style: italic;
 }
 
-/* ===== Стрілочки ===== */
 .arrow-btn {
     background: transparent;
     border: none;
@@ -479,13 +521,42 @@ body {
 .right-arrow {
     background: url("img/arrow-right.svg") center/20px no-repeat;
 }
-.stock {
-    align-items: end;
-    font-size: 14px;
-    margin-top: 8px;
-    color: #555;
-}
 
+.order-title {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1b3bad;
+}
+.text-mob {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    line-height: 200%;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    color: #272727;
+    margin-bottom: 20px;
+}
+.stock {
+    margin-top: 4px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    text-align: start;
+    color: #272727;
+    margin-left: 24px;
+}
+.line-order {
+    margin: 0 auto;
+    border: 1px solid #1b3bad;
+    width: 800px;
+    height: 0px;
+}
 .specs-list li:before {
     background: url(../img/circle-check.svg) 50% / 16px 16px no-repeat;
     content: "";
@@ -497,8 +568,10 @@ body {
 }
 
 .use-block {
+    margin-bottom: 80px;
+    background: #f7f4f0;
     text-align: center;
-    padding: 10px 0 80px;
+    padding: 30px 0 30px;
 }
 
 .use-images-mob {
@@ -525,7 +598,7 @@ body {
 .use-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px 10px;
+    gap: 10px 10px;
     margin: 40px 32px 40px;
     justify-content: center;
 }
@@ -555,7 +628,7 @@ body {
 .use-item::before {
     content: "";
     position: absolute;
-    top: -4px;
+    top: 0px;
     left: 0;
     width: 24px;
     height: 24px;
@@ -690,7 +763,8 @@ body {
 
 
 .order-section {
-    margin-bottom: 80px;
+    margin-top: 68px;
+    margin-bottom: 88px;
     background: #f7f4f0;
 }
 
