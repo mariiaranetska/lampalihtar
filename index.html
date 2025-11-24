@@ -46,16 +46,16 @@
             <nav class="header__menu menu">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <button type="button" data-fls-scrollto=".about" class="menu__link">Про продукт</button>
+                        <a href="#about">Про продукт</a>
                     </li>
                     <li class="menu__item">
-                        <button type="button" data-fls-scrollto=".delivery" class="menu__link">Доставка і оплата</button>
+                        <a href="#delivery">Доставка і оплата</a>
                     </li>
                     <li class="menu__item">
-                        <button type="button" data-fls-scrollto=".reviews" class="menu__link">Відгуки</button>
+                        <a href="#reviews">Відгуки</a>
                     </li>
                     <li class="menu__item">
-                        <button type="button" data-fls-scrollto=".contacts" class="menu__link">Як замовити</button>
+                        <a href="#order">Як замовити</a>
                     </li>
                 </ul>
             </nav>
@@ -64,11 +64,11 @@
                 <ul class="menu__list-mob">
 
                     <li class="menu__item">
-                        <button type="button" data-fls-scrollto=".delivery" class="menu__link-mob">Доставка і оплата</button>
+                        <a href="#delivery">Доставка і оплата</a>
                     </li>
 
                     <li class="menu__item">
-                        <button type="button" data-fls-scrollto=".contacts" class="menu__link-mob">Як замовити</button>
+                        <a href="#order">Як замовити</a>
                     </li>
                 </ul>
             </nav>
@@ -113,7 +113,7 @@
         </div>
     </section>
 
-    <section class="product-desc">
+    <section class="product-desc" id="about">
         <div class="container">
             <h2 class="section-title">ОПИС ПРОДУКТУ</h2>
 
@@ -170,7 +170,7 @@
             <span class="new">749 грн</span>
         </div>
 
-        <button class="btn">Замовити зі знижкою</button>
+        <a href="#order" class="btn">Замовити зі знижкою</a>
     </div>
 
     <p class="stock">*в наявності — 4 шт.</p>
@@ -215,7 +215,7 @@
 
     </section>
 
-    <section class="reviews-section">
+    <section class="reviews-section" id="reviews">
         <div class="reviews-top">
             <h2 class="reviews-title">ЩО КАЖУТЬ НАШІ ПОКУПЦІ</h2>
             <p class="reviews-subtitle">
@@ -227,8 +227,7 @@
             </div>
         </div>
 
-        <div class="reviews-slider-wrapper">
-            <button class="arrow-btn left-arrow"></button>
+        <div class="reviews-slider-wrapper owl-carousel">
 
             <div class="review-card">
                 <span class="review-author">Олена, Київ</span>
@@ -238,7 +237,27 @@
                 </p>
             </div>
 
-            <button class="arrow-btn right-arrow"></button>
+            <div class="review-card">
+                <span class="review-author">Катя, Полтава</span>
+                <p class="review-text">
+                    “Дуже зручно, що є гачок. Повісила на кухні, коли світла не було і краса. Ще часто у дворі ввечері використовуємо, вона легка, зручно переносити.”
+                </p>
+            </div>
+
+            <div class="review-card">
+                <span class="review-author">Анатолій, Умань</span>
+                <p class="review-text">
+                    “Використовую як лампу і повербанк на рибалці, і як ліхтар у гаражі не раз виручала. Дякую за швидку доставку!”
+                </p>
+            </div>
+
+            <div class="review-card">
+                <span class="review-author">Марина, Ужгород</span>
+                <p class="review-text">
+                    “Ми брали у похід в гори, світила всю ніч, бо я боюся темряви на природі. Легка, потужна і не боїться дощу, перевірено)”
+                </p>
+            </div>
+
         </div>
     </section>
 
@@ -273,7 +292,7 @@
     <p class="text-mob">Замов лампу GH-22025 прямо зараз і будь готовий до будь-якої ситуації</p>
     <div class="line-order"></div>
 
-    <section class="order-section">
+    <section class="order-section" id="order">
         <div class="order-section__container">
 
             <div class="order-section__left">
@@ -286,15 +305,14 @@
                 <h3 class="order-section__title">ОФОРМЛЕННЯ ЗАМОВЛЕННЯ</h3>
 
                 <form class="order-form">
-                    <input type="text" class="order-input" placeholder="Вкажіть Ваше ім’я*" required>
-                    <input type="tel" class="order-input" placeholder="Номер телефону*" required>
-
+                    <input type="text" class="order-input" placeholder="Вкажіть Ваше ім’я*" name="name" required>
+                    <input type="tel" class="order-input" placeholder="Номер телефону*" name="phone" required>
                     <div class="order-price">
                         <span class="old">850 грн</span>
                         <span class="new">749 грн</span>
                     </div>
 
-                    <button class="order-btn">КУПИТИ ЗІ ЗНИЖКОЮ</button>
+                    <a href="" class="order-btn">КУПИТИ ЗІ ЗНИЖКОЮ</a>
 
                     <p class="order-note">Наш менеджер зв'яжеться з вами найближчим <br> часом для уточнення деталей замовлення</p>
                     <img src="img/lock_outline_24px.png">

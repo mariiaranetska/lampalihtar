@@ -88,11 +88,61 @@ body {
     transition: opacity .3s;
 }
 
+.menu__item a {
+    display: inline-flex;        /* Вирівнюємо текст + стрілку в ряд */
+    align-items: center;         /* Вирівнюємо по вертикалі */
+    gap: 6px;                    /* Відстань між текстом і стрілкою */
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .04em;
+    line-height: 171%;
+    text-align: center;
+    text-decoration: none;
+    transition: color .3s;
+}
+
 .menu__link:focus {
     outline: none;
     box-shadow: none;
 }
+.btn-hero a:hover {
+    transition: 0.6s;
+    background-color: #001477;
+}
+.menu__item a::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 7px;
+    background: url("../img/arrow-down.svg") center/contain no-repeat;
+}
+.menu__item a:hover {
+    color: #F9CB48;
+}
 
+.menu__list-mob .menu__item a::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 7px;
+    background: url("../img/arrow-down.svg") center/contain no-repeat;
+}
+
+.btn:hover {
+    transition: 0.6s;
+    background-color: #001477;
+}
+.order-form a:hover {
+    transition: 0.6s;
+    background-color: #001477;
+}
+/*
 .menu__link:after {
     background: url(../img/arrow-down.svg) 50%/15px 8px no-repeat;
     content: "";
@@ -100,7 +150,7 @@ body {
     height: 8px;
     width: 15px
 }
-
+*/
 .hero {
     margin-bottom: 80px;
     width: 100%;
@@ -467,11 +517,10 @@ body {
     gap: 24px;
 }
 
-/* ===== Картка відгуку ===== */
 .review-card {
+    max-width: 100%;
+    margin: 0 auto;
     background: #fff;
-    max-width: 700px;
-    width: 100%;
     border-radius: 12px;
     padding: 30px 36px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
@@ -861,10 +910,10 @@ body {
 }
 
 .order-btn {
+    text-decoration: none;
     border-radius: 12px;
-    padding: 10px;
+    padding: 14px;
     width: 380px;
-    height: 44px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: #1b3bad;
     font-family: Montserrat, sans-serif;
@@ -964,3 +1013,29 @@ footer {
     background-color: #1B3BAD;
 }
 */
+
+.owl-item {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dots .owl-dot span {
+    display: inline-block;
+    margin: 8px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #F7F4F0;
+    transition: background-color 0.3s ease;
+}
+
+.owl-dots .owl-dot.active span {
+    background-color: #272727;
+}
